@@ -6,15 +6,16 @@ PIPE NETWORK CDN PoP NODE GUIDE
 sudo mkdir -p /opt/dcdn
 ```
 
-**Download Pipe tool Binary from the URL you were provided via Mail ($PIPE-URL is where you'll insert the download link. into the double quote.):**
+ **2. Download Pipe tool Binary from the URL you were provided via Mail ($PIPE-URL is where you'll insert the download link. into the double quote.):**
 ```bash
 sudo curl -L "$PIPE-URL" -o /opt/dcdn/pipe-tool
 ```
-**Download Node Binary from the URL you were provided via Mail ($DCDND-URL is where you'll insert the download link. into the double quote.):**
+**3.Download Node Binary from the URL you were provided via Mail ($DCDND-URL is where you'll insert the download link. into the double quote.):**
 ```bash
 sudo curl -L "$DCDND-URL" -o /opt/dcdn/dcdnd
 ```
-**Make Binary Executable:**
+
+**4.Make Binary Executable:**
 ```bash
 sudo chmod +x /opt/dcdn/pipe-tool
 sudo chmod +x /opt/dcdn/dcdnd
