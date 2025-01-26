@@ -2,7 +2,7 @@
 PIPE NETWORK CDN PoP NODE GUIDE
 
 Create Directory:
-
+```bash
 sudo mkdir -p /opt/dcdn
 
 **Download Pipe tool Binary from the URL you were provided via Mail ($PIPE-URL is where you'll insert the download link. into the double quote.):**
