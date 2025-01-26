@@ -21,11 +21,11 @@ sudo chmod +x /opt/dcdn/pipe-tool
 sudo chmod +x /opt/dcdn/dcdnd
 ```
 # NODE REGISTRATION
-**Execute the command below to Log In to Generate Access Token:**
+**5. Execute the command below to Log In to Generate Access Token:**
 ```bash
 /opt/dcdn/pipe-tool login --node-registry-url="https://rpc.pipedev.network"
 ```
-**Use the command below to generate a Pipe Network registration token:**
+**6. Use the command below to generate a Pipe Network registration token:**
 ```bash
 /opt/dcdn/pipe-tool generate-registration-token --node-registry-url="https://rpc.pipedev.network" --credentials-dir=/root/.permissionless
 ```
