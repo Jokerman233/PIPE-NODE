@@ -1,18 +1,19 @@
-# PIPE-NODE  
-**PIPE NETWORK CDN PoP NODE GUIDE**
+# PIPE-NODE
+PIPE NETWORK CDN PoP NODE GUIDE
 
----
+Create Directory:
 
-1. **Create Directory:**  
-Run the following command to create the directory `/opt/dcdn`:
-
-```bash
 sudo mkdir -p /opt/dcdn
 
-Download Pipe Tool Binary
-Download the Pipe tool binary from the URL you were provided via email (replace $PIPE-URL with the provided URL):
-bash
-Copy
-Edit
+**Download Pipe tool Binary from the URL you were provided via Mail ($PIPE-URL is where you'll insert the download link. into the double quote.):**
+
 sudo curl -L "$PIPE-URL" -o /opt/dcdn/pipe-tool
 
+Download Node Binary from the URL you were provided via Mail ($DCDND-URL is where you'll insert the download link. into the double quote.):
+
+sudo curl -L "$DCDND-URL" -o /opt/dcdn/dcdnd
+
+Make Binary Executable:
+
+sudo chmod +x /opt/dcdn/pipe-tool
+sudo chmod +x /opt/dcdn/dcdnd
