@@ -1,2 +1,4 @@
 # PIPE-NODE
-PIPE NETWORK NODE GUIDE
+PIPE NETWORK CDN PoP NODE GUIDE
+
+sudo mkdir -p /opt/dcdn
