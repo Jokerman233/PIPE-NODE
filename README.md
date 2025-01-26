@@ -79,7 +79,7 @@ sudo ufw allow 8002/tcp
 sudo ufw allow 8003/tcp
 sudo ufw reload
 ```
-#START NODE
+# START NODE
 **9. start your node usind this commands:**
 ```bash
 sudo systemctl daemon-reload
@@ -92,4 +92,45 @@ sudo systemctl start dcdnd
 /opt/dcdn/pipe-tool generate-wallet --node-registry-url="https://rpc.pipedev.network"
 ```
 You will be prompted to enter an optional 12-word passphrase or you press enter and one will be generated for you. The keypair is saved to ~/.permissionless/key.json
-  # DONE
+
+**To view your wallet’s private address, run the following command:**
+```bash
+/opt/dcdn/pipe-tool show-private-key
+```
+  # DONE!
+
+# Managing the dcdnd Service
+**To check the node status:**
+```bash
+sudo systemctl status dcdnd
+```
+**To view logs:**
+```bash
+sudo journalctl -f -u dcdnd.service
+```
+**To restart the Node:**
+```bash
+
+sudo systemctl restart dcdnd
+```
+
+**Stop node:**
+```bash
+sudo systemctl stop dcdnd
+```
+# Removing dcdnd node:
+```bash
+sudo systemctl stop dcdnd.service
+```
+```bash
+sudo systemctl disable dcdnd.service
+```
+```bash
+sudo rm /etc/systemd/system/dcdnd.service
+```
+```bash
+sudo systemctl daemon-reload
+```
+```bash
+rm -r /opt/dcdn
+```
