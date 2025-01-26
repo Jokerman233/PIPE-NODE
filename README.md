@@ -1,7 +1,7 @@
 # PIPE-NODE
 PIPE NETWORK CDN PoP NODE GUIDE
 
-1. Create Directory:
+**1. Create Directory:**
 ```bash
 sudo mkdir -p /opt/dcdn
 ```
@@ -20,3 +20,4 @@ sudo curl -L "$DCDND-URL" -o /opt/dcdn/dcdnd
 sudo chmod +x /opt/dcdn/pipe-tool
 sudo chmod +x /opt/dcdn/dcdnd
 ```
+# NODE REGISTRATION
